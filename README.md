@@ -1,45 +1,25 @@
-# BoardLogger
+# cpMemo (Clipboard Memo)
+cpMemo is a minimalist and efficient tool written in Rust. It is designed to track and log every change made to your clipboard on macOS and Ubuntu systems. By utilizing Rust, cpMemo ensures minimal memory usage, providing a lightweight solution that runs seamlessly in the background.
 
-BoardLogger is a lightweight tool designed to monitor and log keyboard inputs and clipboard paste operations on MacOS and Ubuntu systems. The log data is written to a directory specified by the user when running the program. BoardLogger is built with performance in mind, and operates with minimal memory footprint to avoid affecting system performance.
+## Usage
 
-## Installation
-
-1. Clone the repository to your local machine.
-
-```bash
-git clone https://github.com/semigrp/boardlogger.git
-```
-
-2. Navigate to the cloned repository
-    
-```bash
-cd boardlogger
-```
-
-3. Build the project with cargo
+1. Build the project using Cargo: cargo build --release
+2. Run the built binary, providing the path to the file where you want to store the logs as an argument:
 
 ```bash
-cargo build --release
+./target/release/cpmemo /path/to/your/log/file
 ```
 
-The executable file will be generated at target/release/boardlogger.
+## Functionality
+cpMemo monitors your clipboard and logs each change with a timestamp, saving all the data in a user-specified log file. Every time you copy a piece of text, cpMemo records it. It is an excellent tool for those who want to keep track of the information they copy throughout the day, serving as a useful recovery point for lost clipboard data.
 
-Usage
------
-To start logging keyboard and clipboard events, run the generated executable file with the path of the log directory as the argument
-
-```bash
-./target/release/boardlogger /path/to/log/directory
-```
-This will create a new log file in the specified directory, with the current date as the file name (for example, 20230524.log). The program will append to this file until it is terminated.
-
-The log file records the timestamped keyboard inputs and clipboard contents each time a change is detected. Keyboard inputs are logged as a list of keys, and clipboard contents are logged as a string.
-
-### Contribution
-If you'd like to contribute to this project, please feel free to create a pull request or open an issue on this repository.
+## Stopping cpMemo 
+Press **Ctrl+C** to stop cpMemo. The program will automatically save the logs to the specified file.
 
 ### License
 This project is licensed under the MIT License. Please see the LICENSE file for more details.
 
 ### Disclaimer
-Use BoardLogger responsibly. It's not intended to be used as a tool for unauthorized surveillance or privacy invasion.
+cpMemo should be used responsibly. It's your responsibility to ensure that you have the necessary permissions to record and store the copied data, especially in a shared or work environment. We are not responsible for any misuse of this tool.
+
+Enjoy your experience with cpMemo!
