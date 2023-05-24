@@ -19,7 +19,7 @@ fn main() {
             let timestamp = Utc::now();
             writeln!(
                 file,
-                "{}: CLIPBOARD: {}",
+                "{}:\n{}",
                 timestamp.to_rfc3339(),
                 new_clipboard_content
             )
