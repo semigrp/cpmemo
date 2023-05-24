@@ -1,0 +1,9 @@
+[package]
+name = "boardlogger"
+version = "0.1.0"
+edition = "2018"
+
+[dependencies]
+device_query = "0.2.6"
+clipboard = "0.5.0"
+chrono = "0.4.19"
