@@ -1,4 +1,4 @@
-# BoardLogger
+# boardlogger
 
 BoardLogger is a lightweight tool designed to monitor and log keyboard inputs and clipboard paste operations on MacOS and Ubuntu systems. The log data is written to a directory specified by the user when running the program. BoardLogger is built with performance in mind, and operates with minimal memory footprint to avoid affecting system performance.
 
@@ -29,7 +29,7 @@ Usage
 To start logging keyboard and clipboard events, run the generated executable file with the path of the log directory as the argument
 
 ```bash
-./target/release/boardlogger /path/to/log/directory
+./target/release/boardlogger /path/to/log/directory/your.md
 ```
 This will create a new log file in the specified directory, with the current date as the file name (for example, 20230524.log). The program will append to this file until it is terminated.
 
