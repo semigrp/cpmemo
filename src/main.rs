@@ -12,6 +12,9 @@ type PlatformSpecificClipboardContext = clipboard::osx_clipboard::OSXClipboardCo
 #[cfg(target_os = "linux")]
 type PlatformSpecificClipboardContext = clipboard::x11_clipboard::X11ClipboardContext;
 
+#[cfg(target_os = "windows")]
+type PlatformSpecificClipboardContext = clipboard::windows_clipboard::WindowsClipboardContext;
+
 fn main() {
     let output_path = std::env::args().nth(1).unwrap();
     let mut file = OpenOptions::new().append(true).open(output_path).unwrap();
