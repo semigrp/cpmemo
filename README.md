@@ -1,5 +1,5 @@
 # cpMemo (Clipboard Memo)
-cpMemo is a minimalist and efficient tool written in Rust. It is designed to track and log every change made to your clipboard on macOS and Ubuntu systems. By utilizing Rust, cpMemo ensures minimal memory usage, providing a lightweight solution that runs seamlessly in the background.
+cpMemo is a minimalist and efficient tool written in Rust. It is designed to track and log every change made to your clipboard on macOS and linux systems. By utilizing Rust, cpMemo ensures minimal memory usage, providing a lightweight solution that runs seamlessly in the background.
 
 ## Usage
 
